@@ -398,7 +398,6 @@ p {
   border-radius: 10px;
   padding: 40px;
   background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
-
 }
 
 .cta_reg {
@@ -407,7 +406,7 @@ p {
 }
 
 h3.content_reg {
-  width: 50vw;
+  width: 80%;
   color: black;
   font-weight: 700;
 }
@@ -440,6 +439,52 @@ h1.blog_content {
   padding: 20px; 
   box-sizing: border-box;
   line-height: 1.1;
+}
+
+
+
+/* End page */
+
+.sectionEnd{
+  max-width: 1169px;
+  width: 100%;
+}
+
+.upContent{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContent{
+  width: 70%;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.qtextBox{
+  width: 100%;
+  text-align: center;
+}
+
+.textBox{
+  border: #fff;
+  border-style: solid;
+  border-width: 1px;
+  color: #4e4e4e;
+  background-color: #031B34;
+  padding: 20px 0;
+  width: 35%;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 180px;
+}
+
+.textBox:hover{
+  color: #fff;
+  background-color: #031B34;
 }
 
 
