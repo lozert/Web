@@ -366,11 +366,11 @@ p {
 }
 
 .text_content_person {
-  max-width: 430px;
-  margin-left: 20px;  
+  max-width: 430px; 
 }
 
 .right_cta {
+  padding-bottom: 20px;
   color: #71E5FF;
 }
 
@@ -380,6 +380,7 @@ p {
 }
 
 .container__content {
+  padding-bottom: 20px;
   color: #81afdd;
 }
 
@@ -390,13 +391,60 @@ p {
 
 /* Регистрация */
 .registration {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 40px;
   background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+
+}
+
+.cta_reg {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+h3.content_reg {
+  width: 50vw;
+  color: black;
+  font-weight: 700;
+}
+
+.cta_buttons__start {
+  order: 2px solid black; 
+  border-radius: 30px; 
+  padding: 20px 55px; 
+  background-color: black; 
+  color: white; 
+  font-size: 18px; 
+  cursor: pointer;
+  text-align: center;
+}
+
+.cta_buttons__start:hover {
+  background-color: black;
+  color: #f49867; 
 }
 
 
 
+/* blog */
+.blog {
+  display: flex;
+}
+
+h1.blog_content {
+  width: 60vw; 
+  padding: 20px; 
+  box-sizing: border-box;
+  line-height: 1.1;
+}
 
 
+
+/* grid-template-columns: 50% 50%;*/
 /* Медиа запросы для адаптива */
 
 @media screen and (max-width: 1024px) {
