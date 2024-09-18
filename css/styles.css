@@ -393,7 +393,6 @@ p {
 .registration {
   margin: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   padding: 40px;
@@ -413,7 +412,8 @@ h3.content_reg {
 }
 
 .cta_buttons__start {
-  order: 2px solid black; 
+  /* order: 2px solid black;  */
+  column-gap: 1rem;
   border-radius: 30px; 
   padding: 20px 55px; 
   background-color: black; 
@@ -432,17 +432,57 @@ h3.content_reg {
 
 /* blog */
 .blog {
-  display: flex;
+  height: 900px;
 }
 
 h1.blog_content {
-  width: 60vw; 
-  padding: 20px; 
+  width: 60vw;
+  margin: auto;
   box-sizing: border-box;
   line-height: 1.1;
 }
 
+.block_content {
+  background: #042C54;
+}
 
+
+.container_content_blog {
+  display: grid;
+  grid-template-columns: 40% 60%; 
+  gap: 30px; 
+
+
+.left_block_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.right_block_content  {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+}
+
+.block_text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.blog_section__img {
+  width: 100%; 
+  object-fit: cover;
+}
+
+h2.text_article {
+  background: #fff ;
+  -webkit-background-clip: text;
+}
+
+.date .text_article .link_article {
+  flex-grow: 1;
+}
 
 /* grid-template-columns: 50% 50%;*/
 /* Медиа запросы для адаптива */
