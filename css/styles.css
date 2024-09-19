@@ -432,7 +432,7 @@ h3.content_reg {
 
 /* blog */
 .blog {
-  height: 900px;
+  width: 100%;
 }
 
 h1.blog_content {
@@ -448,14 +448,47 @@ h1.blog_content {
 
 
 .container_content_blog {
+  margin-top: 75px;
   display: grid;
-  grid-template-columns: 40% 60%; 
-  gap: 30px; 
+  grid-template-columns: 45% 55%;
+  margin-bottom: 150px;
+  width: 100%;
+  gap: 30px;
+
+}
 
 
 .left_block_content {
   display: flex;
+  justify-content: stretch;
+  flex-direction: row;
+  height: 100%;
+}
+
+
+.block_content {
+  display: flex;
   flex-direction: column;
+  flex-grow: 1; /* Даем блоку возможность занимать все доступное пространство */
+}
+
+.block_text_left, .block_text_right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.block_text_right h2 {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.4em; /* Высота строки для лучшей читаемости */
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .right_block_content  {
@@ -464,10 +497,16 @@ h1.blog_content {
   gap: 30px;
 }
 
-.block_text {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+.date, .text_article {
+  margin: 0; /* Убираем отступы у заголовков */
+}
+
+.link_arcticle {
+  margin-top: auto; /* Прижимаем ссылку вниз */
+}
+
+.link_arcticle:hover {
+  color: #e7771b;
 }
 
 .blog_section__img {
@@ -475,13 +514,16 @@ h1.blog_content {
   object-fit: cover;
 }
 
+.date {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
 h2.text_article {
   background: #fff ;
   -webkit-background-clip: text;
-}
-
-.date .text_article .link_article {
-  flex-grow: 1;
+  
 }
 
 /* grid-template-columns: 50% 50%;*/
