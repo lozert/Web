@@ -584,7 +584,7 @@ h1.blog_content {
 .lowContent{
   display: flex;
   flex-direction: row;
-  margin-bottom: 103px;
+  width: 100%;
 }
 
 .logoImg{
@@ -593,12 +593,14 @@ h1.blog_content {
 }
 
 .endButton{
-  color: #4e4e4e;
+  color: #fff;
   background-color: #031B34;
   cursor: pointer;
   border-style: none;
   font-size: 12px;
+  font-weight: 200;
   text-align: start;
+  padding-bottom: 25px;
 }
 
 .endButton:hover{
@@ -606,9 +608,18 @@ h1.blog_content {
   background-color: #031B34;
 }
 
-.endPageText{
+.adressContact{
   font-size: 12px;
   color: #fff;
+  padding-bottom: 31px;
+  font-weight: 300;
+}
+
+.number{
+  font-size: 12px;
+  color: #fff;
+  padding-bottom: 25px;
+  font-weight: 200;
 }
 
 .mainAdress{
@@ -616,12 +627,14 @@ h1.blog_content {
   color: #fff;
   width: 80%;
   padding-top: 23px;
+  font-weight: 300;
 }
 
 .headerEndPageRef{
   font-size: 14px;
   color: #fff;
   margin-bottom: 34px;
+  font-weight: bold;
 }
 
 .adress{
@@ -640,16 +653,24 @@ h1.blog_content {
 
 .company{
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: start;
   margin-right: 141px;
+  width: 19%;
 }
 
 .contact{
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+}
+
+.allRight{
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 78px;
 }
 
 
