@@ -435,9 +435,10 @@ h3.content_reg {
   width: 100%;
 }
 
-h1.blog_content {
-  width: 60vw;
-  margin: auto;
+.title_content_blog {
+  width: 70%;
+  margin: 20px; /* Отступы сверху и снизу по 20px, центрирование по горизонтали */
+  padding: 20px;
   box-sizing: border-box;
   line-height: 1.1;
 }
