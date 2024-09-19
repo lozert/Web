@@ -413,8 +413,11 @@ h3.content_reg {
 }
 
 .cta_buttons__start {
+<<<<<<< HEAD
+  /* order: 2px solid black;  */
   column-gap: 1rem;
   order: 2px solid black; 
+>>>>>>> main
   border-radius: 30px; 
   padding: 20px 55px; 
   background-color: black; 
@@ -433,7 +436,7 @@ h3.content_reg {
 
 /* blog */
 .blog {
-
+<<<<<<< HEAD
   width: 100%;
 }
 
@@ -537,6 +540,7 @@ h1.blog_content {
 }
 
 
+>>>>>>> main
 
 /* grid-template-columns: 50% 50%;*/
 /* Медиа запросы для адаптива */
