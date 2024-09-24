@@ -681,6 +681,7 @@ h1.blog_content {
 
   .header {
     padding: 2rem;
+    position: relative;
   }
 
   .hidden{
