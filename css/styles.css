@@ -908,11 +908,10 @@ h1.blog_content {
     font-size: 16px;
     padding: 20px 1rem;
   }
+
    /*Dan*/
   .container_person {
     flex-direction: column-reverse;
-    align-items: flex-start;
-    align-items: center;
   }
 
   .text_content_person {
