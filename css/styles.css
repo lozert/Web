@@ -837,7 +837,7 @@ h1.blog_content {
 
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 768px) {
   p {
     font-size: 14px;
     line-height: 1.5;
@@ -908,8 +908,23 @@ h1.blog_content {
     font-size: 16px;
     padding: 20px 1rem;
   }
-}
+   /*Dan*/
+  .container_person {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    align-items: center;
+  }
 
+  .text_content_person {
+    max-width: 100%; 
+  }
+
+  .image {
+    max-width: 100%;
+    
+  }
+}
+/*Dan*/
 @media screen and (max-width: 765px) {
   a {
     font-size: 12px;
@@ -950,7 +965,20 @@ h1.blog_content {
   .future_here .future_here__right {
     row-gap: 2rem;
   }
+  /*Dan*/
+  .cta_buttons__start {
+    width: 100%; 
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
 
+  .registration {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  /*Dan*/
   @media screen and (max-width: 550px){
 
     .textBox {
