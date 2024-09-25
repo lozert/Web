@@ -146,11 +146,11 @@ p {
   width: 162px;
 }
 
-.header .header__right {
+/* .header .header__right {
   display: flex;
   column-gap: 6rem;
   align-items: center;
-}
+} */
 
 
 .header .header__menu .menu {
@@ -462,7 +462,6 @@ h3.content_reg {
   margin-bottom: 150px;
   width: 100%;
   gap: 30px;
-
 }
 
 
@@ -812,6 +811,30 @@ h1.blog_content {
   .future_here .future_here__left {
     row-gap: 1rem;
   }
+
+  .container_content_blog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right_block_content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 1rem;
+  }
+
+  .link_arcticle {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 981px){
+
+  .lowContent{
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 766px) {
@@ -838,6 +861,8 @@ h1.blog_content {
   .brands_section {
     margin-top: -15px;
     padding-bottom: 0;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
 
   .what_is_chatgpt_section .what_is_chatgpt_section__top {
@@ -874,6 +899,15 @@ h1.blog_content {
     .container__content {
     line-height: 1.5;
   }
+
+  .textContent {
+    width: 85%;
+  }
+
+  .textBox {
+    font-size: 16px;
+    padding: 20px 1rem;
+  }
 }
 
 @media screen and (max-width: 765px) {
@@ -886,7 +920,7 @@ h1.blog_content {
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 36px;
   }
 
   h2 {
@@ -916,4 +950,35 @@ h1.blog_content {
   .future_here .future_here__right {
     row-gap: 2rem;
   }
+
+  @media screen and (max-width: 550px){
+
+    .textBox {
+      font-size: 14px;
+    }
+
+    .cta_buttons__start {
+      font-size: 14px;
+    }
+
+    .registration {
+     column-gap: 2rem;
+    }
+
+  }
+
+  @media screen and (max-width: 505px) {
+    
+    .container_content_blog {
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .right_block_content {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+    }
+  }
+
 }
