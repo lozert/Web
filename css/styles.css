@@ -405,6 +405,7 @@ p {
   border-radius: 10px;
   padding: 40px;
   background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+  max-width: 1200px
 }
 
 .cta_reg {
@@ -912,6 +913,7 @@ h1.blog_content {
    /*Dan*/
   .container_person {
     flex-direction: column-reverse;
+    font-size: large;
   }
 
   .text_content_person {
@@ -920,7 +922,6 @@ h1.blog_content {
 
   .image {
     max-width: 100%;
-    
   }
 }
 /*Dan*/
@@ -964,7 +965,12 @@ h1.blog_content {
   .future_here .future_here__right {
     row-gap: 2rem;
   }
+
   /*Dan*/
+  .container_person {
+    padding: 0;
+}
+
   .cta_buttons__start {
     width: 100%; 
     padding: 15px;
@@ -977,7 +983,7 @@ h1.blog_content {
     align-items: center;
     text-align: left;
   }
-  /*Dan*/
+  
   @media screen and (max-width: 550px){
 
     .textBox {
@@ -1008,4 +1014,16 @@ h1.blog_content {
     }
   }
 
+  @media screen and (max-width: 410px) {
+    
+    .registration{
+      flex-direction: column;
+      row-gap: 1.5rem;
+      text-align: center;
+    }
+
+    h3.content_reg {
+      width: 100%;
+    }
+  }
 }
