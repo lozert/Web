@@ -827,6 +827,11 @@ h1.blog_content {
   .link_arcticle {
     margin-top: 1.5rem;
   }
+
+  .sectionEnd{
+    padding-top: 5rem;
+  }
+
 }
 
 @media screen and (max-width: 981px){
