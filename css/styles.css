@@ -372,26 +372,26 @@ p {
   gap: 20px;
 }
 
-.text_content_person {
+.container_person .text_content_person {
   max-width: 430px; 
 }
 
-.right_cta {
+.container_person .right_cta {
   padding-bottom: 20px;
   color: #71E5FF;
 }
 
-.image img {
+.container_person .image {
   max-width: 100%;
   height: auto;
 }
 
-.container__content {
+.container_person .container__content {
   padding-bottom: 20px;
   color: #81afdd;
 }
 
-.right_cta_a {
+.container_person .right_cta_a {
   color: #e7771b
 }
 
@@ -408,18 +408,18 @@ p {
   max-width: 1200px
 }
 
-.cta_reg {
+.registration .left_container_reg .cta_reg {
   font-size: 14px;
   padding-bottom: 10px;
 }
 
-h3.content_reg {
+.registration .left_container_reg h3.content_reg {
   width: 80%;
   color: black;
   font-weight: 700;
 }
 
-.cta_buttons__start {
+.registration .cta_buttons__start {
   order: 2px solid black; 
   border-radius: 30px; 
   padding: 20px 55px; 
@@ -430,7 +430,7 @@ h3.content_reg {
   text-align: center;
 }
 
-.cta_buttons__start:hover {
+.registration .cta_buttons__start:hover {
   background-color: black;
   color: #f49867; 
 }
@@ -443,7 +443,7 @@ h3.content_reg {
   width: 100%;
 }
 
-.title_content_blog {
+.blog .title_content_blog {
   width: 70%;
   margin: 20px; /* Отступы сверху и снизу по 20px, центрирование по горизонтали */
   padding: 20px;
@@ -451,12 +451,12 @@ h3.content_reg {
   line-height: 1.1;
 }
 
-.block_content {
+.blog .block_content {
   background: #042C54;
 }
 
 
-.container_content_blog {
+.blog .container_content_blog {
   margin-top: 75px;
   display: grid;
   grid-template-columns: 45% 55%;
@@ -466,7 +466,7 @@ h3.content_reg {
 }
 
 
-.left_block_content {
+.blog .left_block_content {
   display: flex;
   justify-content: stretch;
   flex-direction: row;
@@ -474,13 +474,13 @@ h3.content_reg {
 }
 
 
-.block_content {
+.blog .block_content {
   display: flex;
   flex-direction: column;
   flex-grow: 1; /* Даем блоку возможность занимать все доступное пространство */
 }
 
-.block_text_left, .block_text_right {
+.blog .block_text_left, .block_text_right {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -488,7 +488,7 @@ h3.content_reg {
   flex-grow: 1;
 }
 
-.block_text_right h2 {
+.blog .block_text_right h2 {
   font-size: 25px;
   font-weight: 800;
   line-height: 1.4em; /* Высота строки для лучшей читаемости */
@@ -499,49 +499,48 @@ h3.content_reg {
   -webkit-box-orient: vertical;
 }
 
-.right_block_content  {
+.blog .right_block_content  {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 30px;
 }
 
-.date, .text_article {
+.blog .date, .text_article {
   margin: 0; /* Убираем отступы у заголовков */
 }
 
-.link_arcticle {
+.blog .link_arcticle {
   margin-top: auto; /* Прижимаем ссылку вниз */
 }
 
-.link_arcticle:hover {
+.blog .link_arcticle:hover {
   color: #e7771b;
 }
 
-.blog_section__img {
+.blog .blog_section__img {
   width: 100%; 
   object-fit: cover;
 }
 
-.date {
+.blog .date {
   color: #ffffff;
   font-size: 15px;
   font-weight: 300;
 }
 
-h2.text_article {
+.blog h2.text_article {
   background: #fff ;
   -webkit-background-clip: text;
   
 }
 
 
-h1.blog_content {
+.blog h1.blog_content {
   width: 60vw; 
   padding: 20px; 
   box-sizing: border-box;
   line-height: 1.1;
 }
-
 
 /* End page */
 
@@ -551,25 +550,25 @@ h1.blog_content {
   padding-top: 196px;
 }
 
-.upContent{
+.sectionEnd .upContent{
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.textContent{
+.sectionEnd .upContent .textContent{
   width: 70%;
   text-align: center;
   padding-bottom: 64px;
 }
 
-.qtextBox{
+.sectionEnd .upContent .qtextBox{
   width: 100%;
   text-align: center;
 }
 
-.textBox{
+.sectionEnd .upContent .qtextBox .textBox{
   border: #fff;
   border-style: solid;
   border-width: 1px;
@@ -583,7 +582,7 @@ h1.blog_content {
   margin-bottom: 180px;
 }
 
-.textBox:hover{
+.sectionEnd .upContent .qtextBox .textBox:hover{
   color: #fff;
   background-color: #031B34;
 }
@@ -594,12 +593,12 @@ h1.blog_content {
   width: 100%;
 }
 
-.logoImg{
+.lowContent .adress .logoImg{
   width: 118px;
   height: 30px;
 }
 
-.endButton{
+.lowContent .diffReference .endButton{
   color: #fff;
   background-color: #031B34;
   cursor: pointer;
@@ -610,21 +609,21 @@ h1.blog_content {
   padding-bottom: 25px;
 }
 
-.adressContact{
+.lowContent .contact .adressContact{
   font-size: 12px;
   color: #fff;
   padding-bottom: 31px;
   font-weight: 300;
 }
 
-.number{
+.lowContent .contact .number{
   font-size: 12px;
   color: #fff;
   padding-bottom: 25px;
   font-weight: 200;
 }
 
-.mainAdress{
+.lowContent .adress .mainAdress{
   font-size: 12px;
   color: #fff;
   width: 80%;
@@ -632,28 +631,28 @@ h1.blog_content {
   font-weight: 300;
 }
 
-.headerEndPageRef{
+.lowContent .diffReference .headerEndPageRef{
   font-size: 14px;
   color: #fff;
   margin-bottom: 34px;
   font-weight: bold;
 }
 
-.adress{
+.lowContent .adress{
   display: flex;
   justify-content: start;
   flex-direction: column;
   margin-right: 288px;
 }
 
-.diffReference{
+.lowContent .diffReference{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-right: 180px;
 }
 
-.company{
+.lowContent .company{
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -661,7 +660,7 @@ h1.blog_content {
   width: 19%;
 }
 
-.contact{
+.lowContent .contact{
   display: flex;
   flex-direction: column;
 }
