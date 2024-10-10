@@ -7,6 +7,8 @@ import initBurger from "./../components/initBurger.js";
 import initVR_person from "../components/initVR_person.js";
 import initRegistration from "../components/initRegistration.js";
 import initBlog from "../components/initBlog.js";
+import initSectionEnd from "../components/initSectionEnd.js";
+import initAllRight from "../components/initAllRight.js";
 
 const createHomePageTemplate = (rootNode) => {
   // формируем шаблон базовых секций для дальнейшего монтирования в них
@@ -20,6 +22,8 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section container_person"></section>
     <section class="section registration"></section>
     <section class="section blog"></section>
+    <section class="section sectionEnd"></section>
+    <section class="section allRight"></section>
   `;
 
   rootNode.insertAdjacentHTML("beforeend", template); 
@@ -58,6 +62,12 @@ const homePage = () => {
 
   const blogNode = rootNode.querySelector(".blog");
   initBlog(blogNode);
+
+  const SectionEndNode = rootNode.querySelector(".sectionEnd");
+  initSectionEnd(SectionEndNode);
+
+  const allRightNode = rootNode.querySelector(".allRight");
+  initAllRight(allRightNode);
 
   // инициализация бургера для адаптивного меню
   initBurger(headerNode);

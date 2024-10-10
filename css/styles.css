@@ -557,18 +557,18 @@ p {
   align-items: center;
 }
 
-.sectionEnd .upContent .textContent{
+.sectionEnd .textContent{
   width: 70%;
   text-align: center;
   padding-bottom: 64px;
 }
 
-.sectionEnd .upContent .qtextBox{
+.sectionEnd  .qtextBox{
   width: 100%;
   text-align: center;
 }
 
-.sectionEnd .upContent .qtextBox .textBox{
+.sectionEnd .textBox{
   border: #fff;
   border-style: solid;
   border-width: 1px;
@@ -582,7 +582,7 @@ p {
   margin-bottom: 180px;
 }
 
-.sectionEnd .upContent .qtextBox .textBox:hover{
+.sectionEnd .textBox:hover{
   color: #fff;
   background-color: #031B34;
 }
@@ -593,12 +593,12 @@ p {
   width: 100%;
 }
 
-.lowContent .adress .logoImg{
+.sectionEnd .logoImg{
   width: 118px;
   height: 30px;
 }
 
-.lowContent .diffReference .endButton{
+.sectionEnd .endButton{
   color: #fff;
   background-color: #031B34;
   cursor: pointer;
@@ -609,21 +609,21 @@ p {
   padding-bottom: 25px;
 }
 
-.lowContent .contact .adressContact{
+.sectionEnd .adressContact{
   font-size: 12px;
   color: #fff;
   padding-bottom: 31px;
   font-weight: 300;
 }
 
-.lowContent .contact .number{
+.sectionEnd .number{
   font-size: 12px;
   color: #fff;
   padding-bottom: 25px;
   font-weight: 200;
 }
 
-.lowContent .adress .mainAdress{
+.sectionEnd .mainAdress{
   font-size: 12px;
   color: #fff;
   width: 80%;
@@ -631,28 +631,28 @@ p {
   font-weight: 300;
 }
 
-.lowContent .diffReference .headerEndPageRef{
+.sectionEnd .headerEndPageRef{
   font-size: 14px;
   color: #fff;
   margin-bottom: 34px;
   font-weight: bold;
 }
 
-.lowContent .adress{
+.sectionEnd .adress{
   display: flex;
   justify-content: start;
   flex-direction: column;
   margin-right: 288px;
 }
 
-.lowContent .diffReference{
+.sectionEnd .diffReference{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-right: 180px;
 }
 
-.lowContent .company{
+.sectionEnd .company{
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -660,7 +660,7 @@ p {
   width: 19%;
 }
 
-.lowContent .contact{
+.sectionEnd .contact{
   display: flex;
   flex-direction: column;
 }
@@ -835,7 +835,7 @@ p {
 
 @media screen and (max-width: 981px){
 
-  .lowContent{
+  .sectionEnd .lowContent{
     flex-wrap: wrap;
     gap: 2rem;
   }
