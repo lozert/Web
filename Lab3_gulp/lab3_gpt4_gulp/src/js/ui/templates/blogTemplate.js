@@ -50,7 +50,8 @@ export const blogTemplate = ({container_blogData, left_block_contentData, right_
 
     const containerBlogItemsTemplate = createContainerBlogTemplate(container_blogData)
     const containerLeftBlockContentItemsTemplate = createLeftBlockContentTemplate(left_block_contentData)
-    const containerRightBlockContentItemsTemplate = right_block_contentData.map((item) => createRightBlockContentTemplate(item));
+    const containerRightBlockContentItemsTemplate = right_block_contentData.map((item) => 
+      createRightBlockContentTemplate(item)).join("");
 
     const resultTemplate = `
     ${containerBlogItemsTemplate}
