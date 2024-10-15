@@ -40,6 +40,7 @@ export const createLeftBlockContentTemplate = ({image:{src, alt}, date, text, bu
                 <h4 class="date">${date}</h4>
                 <h2 class="text_article">${text}</h2>
                 <a href="${href}" class="link_arcticle">${title}</a>
+              </div>
             </div>
     `; 
     return template;
