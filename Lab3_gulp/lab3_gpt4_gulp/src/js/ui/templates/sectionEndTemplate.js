@@ -17,34 +17,44 @@ export const createAdressTemplate = ({image:{src, alt}, adress}) => {
     `;
     return template
 };
+export const createInputTemplate = ({ type, title }) => {
+    switch (type) {
+      case "text":
+        return `
+           <p class="headerEndPageRef">${title}</p>
+        `;
+  
+      case "button":
+        return `
+            <a href="" class="endButton">${title}</a>
+        `;
+  
+      default:
+        return ``;
+    }
+  };
 
-export const createDiffReferenceTemplate = ({
-    text,
-    button1:{href1, title1},
-    button2:{href2, title2},
-    button3:{href3, title3},
-    button4:{href4, title4}
-})=>{
+export const createDiffReferenceTemplate = (DiffRefrence)=>{
+    const DiffReferenceTemp = DiffRefrence
+        .map((DiffRefrence) => createInputTemplate(DiffRefrence))
+        .join("");
     const template = `
-    <p class="headerEndPageRef">${text}</p>
-            <a href="${href1}" class="endButton">${title1}</a>
-            <a href="${href2}" class="endButton">${title2}</a>
-            <a href="${href3}" class="endButton">${title3}</a>
-            <a href="${href4}" class="endButton">${title4}</a>
+        <div class="diffReference">
+                ${DiffReferenceTemp}
+        </div>
     `;
     return template
 };
-export const createCompanyTemplate = ({
-    text,
-    button1:{href1, title1},
-    button2:{href2, title2},
-    button3:{href3, title3}
-})=>{
+export const createCompanyTemplate = (Company)=>{
+    const CompanyTemp = Company
+        .map((Company) => createInputTemplate(Company))
+        .join("");
+
     const template = `
-    <p class="headerEndPageRef">${text}</p>
-            <a href="${href1}" class="endButton">${title1}</a>
-            <a href="${href2}" class="endButton">${title2}</a>
-            <a href="${href3}" class="endButton">${title3}</a>
+            <div class="company">
+                ${CompanyTemp}
+        </div>
+
     `;
     return template
 };
@@ -63,10 +73,10 @@ export const createContactTemplate = ({
     return template
 };
 
-export const sectionEndTemplate = ({up_content_data, adress_data,diff_reference_data, company_data,contact_data}) => {
+export const sectionEndTemplate = ({up_content_data, adress_data,diff_reference_button_data, company_data,contact_data}) => {
     const UpContentTemplate = createUpContentTemplate(up_content_data)
     const AdressTemplate = createAdressTemplate(adress_data)
-    const DiffReferenceTemplate = createDiffReferenceTemplate(diff_reference_data)
+    const DiffReferenceTemplate = createDiffReferenceTemplate(diff_reference_button_data)
     const CompanyTemplate = createCompanyTemplate(company_data)
     const ContactTemplate = createContactTemplate(contact_data)
     const resultTemplate =`
@@ -90,4 +100,3 @@ export const sectionEndTemplate = ({up_content_data, adress_data,diff_reference_
     `;
     return resultTemplate
 }
-

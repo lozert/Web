@@ -14,40 +14,46 @@ export const adress_data = {
     },
     adress: "ул. Профессора Поздеева, 13, к.Г, Пермь, Пермский край, 614013 Все права защищены"
 }
-export const diff_reference_data = {
-    text: "Ссылки",
-    button1: {
-        href1: "#",
-        title1:"Оверон"
+export const diff_reference_data = [
+    {
+        type: "text",
+        title: "Ссылки",
     },
-    button2: {
-        href2:"#",
-        title2:"Соц. сети"
+    {
+        type: "button",
+        title: "Оверон",
     },
-    button3: {
-        href3:"#",
-        title3:"Счетчики"
+    {
+        type: "button",
+        title: "Соц.сети",
     },
-    button4: {
-        href4:"#",
-        title4:"Контакты"
+    {
+        type: "button",
+        title: "Счетчики",
+    },   
+    {
+        type: "button",
+        title: "Контакты",
     },
-}
-export const company_data = {
-    text: "Компания",
-    button1: {
-        href1:"#",
-        title1:"Условия использования"
+]
+export const company_data = [
+    {
+        type: "text",
+        title: "Компания",
     },
-    button2: {
-        href2:"#",
-        title2:"Перс. данные"
+    {
+        type: "button",
+        title: "Условия использования",
     },
-    button3: {
-        href3:"#",
-        title3:"Контакты"
+    {
+        type: "button",
+        title: "Перс.данные",
     },
-}
+    {
+        type: "button",
+        title: "Контакты",
+    },
+]
 export const contact_data = {
     text: "Контакты",
     adress: "ул. Профессора Поздеева, 13, к.Г, Пермь",

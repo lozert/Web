@@ -20,36 +20,51 @@ export const Adress = ({adress_data:{image:{src, alt}, adress}}) => {
     )
 };
 
-export const DiffReference = ({
-    diff_reference_data:{text,
-    button1:{href1, title1},
-    button2:{href2, title2},
-    button3:{href3, title3},
-    button4:{href4, title4}
-}})=>{
+export const Button = ({ DiffRef: { type, title} } ) => {
+    switch (type) {
+      case "text":
+       return <p class="headerEndPageRef">{title}</p>;
+  
+      case "button":
+        return (
+            <a href="" class="endButton">{title}</a>
+        );
+  
+      default:
+        return null;
+    }
+  };
+  export const Button1 = ({ Comp: { type, title} } ) => {
+    switch (type) {
+      case "text":
+       return <p class="headerEndPageRef">{title}</p>;
+  
+      case "button":
+        return (
+            <a href="" class="endButton">{title}</a>
+        );
+  
+      default:
+        return null;
+    }
+  };
+
+export const DiffReference = ({DiffRef})=>{
     return(
-    <>
-        <p className="headerEndPageRef">{text}</p>
-        <a href={href1} className="endButton">{title1}</a>
-        <a href={href2} className="endButton">{title2}</a>
-        <a href={href3} className="endButton">{title3}</a>
-        <a href={href4} className="endButton">{title4}</a>
-    </>
+        <div className="diffReference">
+        {DiffRef.map((DiffRef, index) => (
+          <Button key={index} DiffRef={DiffRef} />
+        ))}
+      </div>
     )
 };
-export const Company = ({
-    company_data:{text,
-    button1:{href1, title1},
-    button2:{href2, title2},
-    button3:{href3, title3}
-}})=>{
+export const Company = ({Comp})=>{
     return(
-        <>
-            <p className="headerEndPageRef">{text}</p>
-            <a href={href1} className="endButton">{title1}</a>
-            <a href={href2} className="endButton">{title2}</a>
-            <a href={href3} className="endButton">{title3}</a>
-        </>
+        <div className="company">
+        {Comp.map((Comp, index) => (
+          <Button1 key={index} Comp={Comp} />
+        ))}
+      </div>
     )
 }
 
@@ -84,10 +99,10 @@ const SectionEnd = ( ) => {
             <Adress adress_data={adress_data}/>
             </div>
             <div className = "diffReference">
-            <DiffReference diff_reference_data={diff_reference_data}/>
+            <DiffReference DiffRef ={diff_reference_data}/>
             </div>
             <div className = "company">
-            <Company company_data={company_data}/>
+            <Company Comp={company_data}/>
             </div>
             <div className = "contact">
             <Contact contact_data={contact_data}/>
